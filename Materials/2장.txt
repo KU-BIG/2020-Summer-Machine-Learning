@@ -1,0 +1,30 @@
+scikit learn은 모두 2 tensor data (machine learning)
+
+one-hot vector: dummy variable과는 다름
+
+recall: default를 default로 예측할 확률
+
+oversampling 중요
+
+
+loss function을 정의하고 minimize하는 것을 찾고싶다 argminW loss(W)
+loss function은 
+1) classification(multinomial likelihood에 (-)붙혀서 최소화: categorical cross entropy):다항이냐 이항이냐에 따라 softmax: 다항, sigmoid: 이항 (logistic function이다!!!)
+2) regression(y가 continuous, 선형or비선형): MSE와 연결
+
+loss function 최솟값?
+기울기하강법 ( 조금 조금씩 감: 점화식)
+미분해서 기울기 부호의 반대방향으로 감(가는 양(예타): learning rate)
+최급하강법
+eta로 미분해서 0이되게 하는 값을 구하는 과정 (vector이기 때문에 orthogonal projection 개념으로 이해)
+
+통계학에서는 기본적으로.. 
+l(W) = sigma(y_i - hay y_i(W))^2 -> global min이 아닌 local min을 찾을 가능성 있음
+>> stocastic gradient descent 방법
+l_1(W) = (y_1 - hat y_1(W))^2
+l_2(W) = (y_1 - hat y_2(W))^2
+n 까지
+근데 하나씩 안하고 n=100 이라면 10개씩 10번 (deep learning 에서는 stoc만씀)
+
+
+

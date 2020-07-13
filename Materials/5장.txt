@@ -1,0 +1,13 @@
+Naive Bayes model : x들 서로 독립이라고 가정 (big data에서 유용)
+
+Discriminant analysis : 
+	Normal 가정하여 Bayesian 접근
+	y=k (클래스)
+	5.3 (mu_k + mu_l) 오타임, - 로 바꿔야함
+	delta_k(x_vector) : discriminant function
+
+
+
+Classification은 class가 known
+
+clustering은 class가 unknown

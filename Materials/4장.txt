@@ -1,0 +1,20 @@
+logistic regression classifier
+Class1, Class2
+loss function : categorical cross entropy (sigmoid 함수)
+ALN : p_i = W(^T) *%* X_i (정의역 고려 안한 옛날 방법)
+Logistic : p_i = 1/exp{ - ( W(^T) *%* X_i )}
+
+결국 loss function = - Log likelihood
+
+regularization (중요) 목적: generalizaion, overffiting 방지
+lambda 는 hyperparameter (본인 지정)
+lambda가 커지면 음영이 작아짐 -> contribution을 못하는 weight를 0으로 보냄
+**필요없는 parameter 버리는 것
+통계적 test : w_i 들의 분포를 구해서 test
+L1 space: Lasso regression, L2 space: 릿지 regression
+장점: testing 방법의 일종, 
+	해석: regulation(lambda)를 강하게 줄수록 w_i가 순서대로 날라감 
+		L1은 contribution이 낮은것 부터 0으로,
+		L2는 0으로 가깝게
+
+해석의 기초: bayes theorem
