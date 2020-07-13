@@ -2,7 +2,7 @@
 2020년 여름방학 머신러닝 기초 이론 스터디 (조장: 11기 명재성)
 
 ##교재 
-Hands on machine learning with scikit learn and tensorflow(PDF 제공)
+Hands on machine learning with scikit learn and tensorflow(PDF 제공) \
 An introduction to Statistical Learning(PDF 제공)
 파이썬을 이용한 통계적 머신러닝, 박유성 (선택)
 
